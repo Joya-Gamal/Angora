@@ -1,0 +1,466 @@
+:root
+{
+    --main-color:#f25454 ;
+}
+.navbar 
+{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar-dark .navbar-nav .nav-link
+{
+    color: white;
+}
+.navbar-dark .navbar-nav .nav-link.active
+{
+     color: var(--main-color);
+}
+
+.navbar-dark .navbar-nav .nav-link
+{
+    transition: 1s;
+}
+.navbar-dark .navbar-nav .nav-link:hover
+{
+    color: var(--main-color);
+}
+.nav-brdr
+{
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/*---------------------*/
+#home .slide-content h3
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 70;
+}
+
+#home .brdr
+{
+    width: 30px;
+    height: 30px;
+}
+#home .btn2
+{
+    top: 45%;
+}
+
+
+.slide-content
+{
+    width: 100%;
+    animation-name: home-move;
+    animation-duration: 2s;
+}
+@keyframes home-move {
+    0%{left: 100%; }
+    100%{left: 0%;}
+
+    
+}
+
+.mouse
+{
+    width: 20px;
+    height: 50px;
+    border: #f1f1f1 1px solid;
+    z-index: 99;
+    bottom: 10px;
+    position: relative;
+}
+ 
+
+.mouse::after
+{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    animation-name: move;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+
+}
+
+@keyframes move {
+    0%{top : 5%}
+    50%{top: 50%;}
+    100%{top: 70%;}
+}
+.setting
+{
+    width: 30px;
+    height: 30px;
+    background-color: #1f2528;
+    position: fixed;
+    top: 150px;
+    left: 0px;
+    z-index: 9999;
+}
+
+
+/*----------------*/
+.title h3
+{
+    font-weight: 900;
+    font-size: 60;
+    color: rgba(0 ,0 , 0 ,0.1);
+}
+
+.title h2
+{
+    font-weight: 700;
+    font-size: 38;
+}
+
+#about p , #about h3
+{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.line
+{
+    width: 5%;
+    height: 1px;
+    background-color: black;
+}
+
+
+#about .about-content p , #about h3
+{
+    font-size: 14;
+}
+.progress-branding
+{
+    animation-name: progress-branding;
+    animation-duration: 2s;
+}
+
+@keyframes progress-branding {
+    0%{width: 0;}
+    100%{width:80%;}
+}
+
+.progress-web
+{
+    animation-name: progress-web;
+    animation-duration: 2s;
+}
+
+@keyframes progress-web {
+    0%{width: 0;}
+    100%{width:95%;}
+}
+
+.progress-graphic
+{
+    animation-name: progress-graphic;
+    animation-duration: 2s; 
+}
+
+@keyframes progress-graphic {
+    0%{width: 0;}
+    100%{width:85%;}
+}
+
+.progress-development
+{
+    animation-name: progress-development;
+    animation-duration: 2s;
+}
+
+@keyframes progress-development {
+    0%{width: 0;}
+    100%{width:70%;}
+}
+
+#about .branding
+{
+    width: 80%;
+}
+
+#about .web
+{
+    width: 95%;
+}
+
+#about .graphic
+{
+    width: 85%;
+}
+
+#about .development 
+{
+    width: 70%;
+}
+#about .progress
+{
+    height: 5px;
+}
+
+#about .progress .progress-bar
+{
+    background-color: var(--main-color);   
+}
+
+
+/*----------------------*/
+
+.team-container .layer
+{
+    opacity: 0;
+    background-color: rgba(242, 84, 84, 0.85);
+    transition: 0.5s;
+}
+.team-container:hover .layer    
+{
+    opacity: 1;
+}
+
+.team-container img
+{
+    transition: 0.5s;
+}
+.team-container:hover img
+{
+
+    transform: scale(1.1);
+}
+
+.team-container h3
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16;
+    font-weight: 700;
+    transition: 0.5s;
+}
+.team-container:hover h3
+{
+    color: rgba(242, 84, 84, 0.85); 
+}
+
+.team-container h4
+{
+ 
+    font-weight: 100;
+    font-size: 14;
+    font-family: 'Open Sans', sans-serif;   
+}
+
+/*---------------*/
+#idea button 
+{
+    background-color:var(--main-color) ;
+}
+#idea button:hover
+{
+
+    background-color: rgba(242, 84, 84, 0.85);
+}
+
+#idea h3
+{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+#idea button a{
+    text-decoration: none;
+    color: #fff ;
+}
+
+
+/*-------------------------*/
+#services
+{
+    background-color: #fafafa;
+}
+.icon 
+{
+    color: var(--main-color);
+    font-size: 32px;
+}
+
+.project-items h3
+{
+    transition: 1s;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 16;
+
+    
+}
+.project-items:hover h3
+{
+    color: var(--main-color);
+
+}
+
+.project-items p
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 16;
+}
+
+
+/*****************************/
+.carousel-indicators [data-bs-target]
+{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    text-indent: 0;
+}
+
+.client-data
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25;
+}
+
+/*******************/
+#contacts
+{
+    background-color: #f1f1f1;
+}
+#contacts h4
+{
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 14;
+
+}
+
+#contacts h3 
+{
+        font-family: 'Poppins', sans-serif;
+}
+
+#contacts button 
+{
+    background-color:var(--main-color) ;
+}
+#contacts button:hover
+{
+
+    background-color: rgba(242, 84, 84, 0.85);
+}
+
+#contacts button a{
+    text-decoration: none;
+    color: #fff ;
+}
+
+.form-control
+{
+    border-color: #f1f1f1;
+}
+
+/******************/
+
+footer
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+footer h3
+{
+    font-weight: 900;
+}
+footer h4
+{
+    font-size: 16;
+}
+
+footer span 
+{
+    transition: 1s;
+}
+footer  span:hover
+{
+    color: var(--main-color) ;
+}
+
+footer a
+{
+    color: gray;
+}
+footer .btn
+{
+    transition: 1s;
+
+    color: gray;
+    border: #fff 1px solid;
+} 
+footer .btn:hover
+{
+    border: var(--main-color) 1px solid;
+    color: var(--main-color);
+}
+.footer-icon 
+{
+    width: 35px;
+    height: 35px;
+    background-color: rgba(242, 84, 84, 0.85);
+    font-size: 32px;
+    transition: 1s;
+}
+
+.footer-icon:hover
+{
+    background-color: var(--main-color);
+}
+/*********************/
+.footer-social h4
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16;
+}
+.footer-social span 
+{
+    color: #fff;
+    transition: 1s;
+}
+.footer-social span:hover
+{
+    color: var(--main-color);
+}
+.icons i
+{
+    transition: 1s;
+}
+
+.icons i:hover 
+{
+    color: var(--main-color);
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 768px){
+    .title-container 
+    {
+        width: 55%;
+    }
+
+    .idea-content
+    {
+        width: 75%;
+    }
+}
+
+
